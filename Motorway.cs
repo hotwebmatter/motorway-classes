@@ -92,5 +92,36 @@ namespace motorway_classes
                 return tollCharged;
             }
         }
+        // enough constructors to make class flexible
+        Motorway()
+        {
+            highwayName = "Route 66";
+            streetType = "Interstate";
+            direction = "SW";
+            surface = "blacktop";
+            maintainedBy = "USDOT";
+            numberOfLanes = 4;
+            tollCharged = false;
+        }
+        Motorway(string name, string type, string dir)
+        {
+            highwayName = name;
+            streetType = type;
+            direction = dir;
+            surface = "blacktop";
+            maintainedBy = "USDOT";
+            numberOfLanes = 4;
+            tollCharged = false;
+        }
+        Motorway(string name, string type, string dir, string maintainer, int lanes)
+        {
+            highwayName = name;
+            streetType = type;
+            direction = dir;
+            surface = "blacktop";
+            maintainedBy = maintainer;
+            numberOfLanes = lanes;
+            tollCharged = false;
+        }
     }
 }
