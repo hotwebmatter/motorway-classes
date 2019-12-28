@@ -123,5 +123,29 @@ namespace motorway_classes
             numberOfLanes = lanes;
             tollCharged = false;
         }
+        // instance methods
+        public string FullName()
+        {
+            return highwayName;
+        }
+        public string HasToll()
+        {
+            string result = String.Format("{0, 16}{1, 16}", "Highway name:", highwayName);
+            if (tollCharged)
+            {
+                result += String.Format("\n{0, 16}{1, 16}", "Toll charged:", "TRUE");
+            }
+            else
+            {
+                result += String.Format("\n{0, 16}{1,16}", "Toll charged:", "FALSE");
+            }
+            return result;
+        }
+        public string HasLanes()
+        {
+            string result = String.Format("{0, 16}{1, 16}", "Highway name:", highwayName);
+            result += String.Format("\n{0, 16}{1, 16}", "How Many Lanes:", numberOfLanes);
+            return result;
+        }
     }
 }
