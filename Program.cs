@@ -10,12 +10,17 @@ namespace motorway_classes
             // test constructors
             Motorway aMotorway = new Motorway();
             Motorway bMotorway = new Motorway("Route 44", "Parkway", "W");
-            Motorway cMotorway = new Motorway("A14", "British Trunk Road", "ESE", "UK Highways Agency", 4);
+            Motorway cMotorway = new Motorway("A14", "dual carriageway", "ESE", "Highways Agency", 4);
+            cMotorway.TollCharged = true;
+            Motorway[] motorwayArray = { aMotorway, bMotorway, cMotorway };
             // test instance methods
-            WriteLine(aMotorway.FullName());
-            WriteLine(aMotorway.HasToll());
-            WriteLine(aMotorway.HasLanes());
-            WriteLine(aMotorway.ToString());
+            foreach (Motorway obj in motorwayArray)
+            {
+                WriteLine(obj.FullName());
+                WriteLine(obj.HasToll());
+                WriteLine(obj.HasLanes());
+                WriteLine(obj.ToString());
+            }
         }
     }
 }
