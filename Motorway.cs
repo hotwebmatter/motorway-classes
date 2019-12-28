@@ -155,7 +155,7 @@ namespace motorway_classes
             result += String.Format("* {0, 17}{1, 17} *\n", "Type of Street:", streetType);
             result += String.Format("* {0, 17}{1, 17} *\n", "Direction:", direction);
             result += String.Format("* {0, 17}{1, 17} *\n", "Surface:", surface);
-            result += String.Format("* {0, 17}{1, 17:N} *\n", "Number of Lanes:", numberOfLanes);
+            result += String.Format("* {0, 17}{1, 17:N0} *\n", "Number of Lanes:", numberOfLanes);
             result += String.Format("* {0, 17}{1, 17} *\n", "Toll Charged:", tollCharged);
             result += String.Format("* {0, 17}{1, 17} *\n", "Maintained By:", maintainedBy);
             result += String.Format("**************************************\n");
