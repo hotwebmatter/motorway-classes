@@ -93,7 +93,7 @@ namespace motorway_classes
             }
         }
         // enough constructors to make class flexible
-        Motorway()
+        public Motorway()
         {
             highwayName = "Route 66";
             streetType = "Interstate";
@@ -103,7 +103,7 @@ namespace motorway_classes
             numberOfLanes = 4;
             tollCharged = false;
         }
-        Motorway(string name, string type, string dir)
+        public Motorway(string name, string type, string dir)
         {
             highwayName = name;
             streetType = type;
@@ -113,7 +113,7 @@ namespace motorway_classes
             numberOfLanes = 4;
             tollCharged = false;
         }
-        Motorway(string name, string type, string dir, string maintainer, int lanes)
+        public Motorway(string name, string type, string dir, string maintainer, int lanes)
         {
             highwayName = name;
             streetType = type;
