@@ -147,5 +147,19 @@ namespace motorway_classes
             result += String.Format("\n{0, 16}{1, 16}", "How Many Lanes:", numberOfLanes);
             return result;
         }
+        // override ToString() method
+        public override string ToString()
+        {
+            string result = String.Format("\n****** Motorway Instance Values ******\n");
+            result += String.Format("* {0, 18}{1, 18} *\n", "Highway Name:" highwayName);
+            result += String.Format("* {0, 18}{1, 18} *\n", "Type of Street:", streetType);
+            result += String.Format("* {0, 18}{1, 18} *\n", "Direction:", direction);
+            result += String.Format("* {0, 18}{1, 18} *\n", "Surface:", surface);
+            result += String.Format("* {0, 18}{1, 18} *\n", "Number of Lanes:", (string)numberOfLanes);
+            result += String.Format("* {0, 18}{1, 18} *\n", "Toll Charged", (string)tollCharged);
+            result += String.Format("* {0, 18}{1, 18} *\n", "Maintained By:", maintainedBy);
+            result += String.Format("**************************************\n");
+            return result;
+        }
     }
 }
