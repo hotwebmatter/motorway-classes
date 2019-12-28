@@ -130,21 +130,21 @@ namespace motorway_classes
         }
         public string HasToll()
         {
-            string result = String.Format("{0, 16}{1, 16}", "Highway name:", highwayName);
+            string result = String.Format("{0, 16}{1, 16}\n", "Highway name:", highwayName);
             if (tollCharged)
             {
-                result += String.Format("\n{0, 16}{1, 16}", "Toll charged:", "TRUE");
+                result += String.Format("{0, 16}{1, 16}\n", "Toll charged:", "TRUE");
             }
             else
             {
-                result += String.Format("\n{0, 16}{1,16}", "Toll charged:", "FALSE");
+                result += String.Format("{0, 16}{1,16}\n", "Toll charged:", "FALSE");
             }
             return result;
         }
         public string HasLanes()
         {
-            string result = String.Format("{0, 16}{1, 16}", "Highway name:", highwayName);
-            result += String.Format("\n{0, 16}{1, 16}", "How Many Lanes:", numberOfLanes);
+            string result = String.Format("{0, 16}{1, 16}\n", "Highway name:", highwayName);
+            result += String.Format("{0, 16}{1, 16}\n", "How Many Lanes:", numberOfLanes);
             return result;
         }
         // override ToString() method
