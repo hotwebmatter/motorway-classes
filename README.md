@@ -18,7 +18,7 @@ Route 66
 *   Type of Street:       Interstate *
 *        Direction:               SW *
 *          Surface:         blacktop *
-*  Number of Lanes:             4.00 *
+*  Number of Lanes:                4 *
 *     Toll Charged:            False *
 *    Maintained By:            USDOT *
 **************************************
@@ -36,7 +36,7 @@ Route 44
 *   Type of Street:          Parkway *
 *        Direction:                W *
 *          Surface:         blacktop *
-*  Number of Lanes:             4.00 *
+*  Number of Lanes:                4 *
 *     Toll Charged:            False *
 *    Maintained By:            USDOT *
 **************************************
@@ -54,8 +54,9 @@ A14
 *   Type of Street: dual carriageway *
 *        Direction:              ESE *
 *          Surface:         blacktop *
-*  Number of Lanes:             4.00 *
+*  Number of Lanes:                4 *
 *     Toll Charged:             True *
 *    Maintained By:  Highways Agency *
 **************************************
+
 ```
